@@ -6,17 +6,25 @@
 
 [下载正式 APK / Releases](https://github.com/Xposed-Modules-Repo/io.github.gkeyes.themeimport/releases) · [维护者 / Maintainer: gkeyes](https://github.com/gkeyes)
 
+专为 18 Fold 适配，恢复 HyperOS 本地 MTZ 导入和主题混搭，并从 LSPosed 管理主题、壁纸与小组件目录。
+
+[简体中文](#中文) · [English](#english)
+
 ## 中文
 
-### 功能与要求
+### 主要功能
 
-恢复 HyperOS「主题壁纸」原生的本地 MTZ 导入和「混搭」入口，并提供主题商店、主题/壁纸页面及智能助理小组件目录的独立开关。`0.13.0-api102` 新装默认开启全部九个目录开关；已保存的关闭项会保留。
+- **本地 MTZ 导入**：在「主题壁纸 → 本地主题」导入 MTZ 文件。
+- **主题混搭**：从「主题壁纸 → 我的」打开原生混搭页面。
+- **目录开关**：按需调整主题商店、主题与壁纸页面、智能助理小组件目录。首次安装 `0.13.0-api102` 时九项开关默认开启，升级后保留已保存的选择。
+
+### 兼容性
 
 需要 **Android 14+、root，以及支持 libxposed API 102 的 LSPosed 或同类框架**。仅支持旧 API 82 的框架不适用。
 
 适配参考：**18 Fold**，主题壁纸 `80.9.4.0`、智能助理 `25.41.87.00-10301052`。其他机型或应用版本未作兼容保证；未识别的方法或结构会跳过对应适配。
 
-### 使用
+### 安装与设置
 
 1. 安装正式 APK，在 LSPosed 中启用模块。
 2. 勾选「主题壁纸」`com.android.thememanager`；使用小组件目录功能时，同时勾选「智能助理」`com.miui.personalassistant`。重启对应应用进程。
@@ -33,15 +41,19 @@
 
 ## English
 
-### Features and requirements
+### Features
 
-Restores HyperOS Theme Manager's native local MTZ import and theme mixing entries. Separate switches control supported theme-store requests, theme/wallpaper pages, and Personal Assistant widget catalogs. All nine catalog switches default to enabled on a fresh installation of `0.13.0-api102`; previously saved disabled choices are preserved.
+- **Local MTZ import** from the native Theme Manager’s local themes list.
+- **Theme mixing** from the **My/Account** page.
+- **Catalog switches** for supported theme-store requests, theme and wallpaper pages, and Personal Assistant widgets. All nine switches default to on for fresh installs of `0.13.0-api102`. Saved choices are preserved on update.
+
+### Compatibility
 
 Requires **Android 14+, root, and an LSPosed-compatible framework supporting libxposed API 102**. Framework builds supporting only legacy API 82 are not supported.
 
 Compatibility references: **18 Fold**, Theme Manager `80.9.4.0`, and Personal Assistant `25.41.87.00-10301052`. Compatibility with other devices or app versions is not guaranteed. Unrecognized methods or structures are skipped.
 
-### Usage
+### Installation and settings
 
 1. Install the release APK and enable the module in LSPosed.
 2. Select Theme Manager (`com.android.thememanager`). Also select Personal Assistant (`com.miui.personalassistant`) for its widget catalog features. Restart the affected app processes.
